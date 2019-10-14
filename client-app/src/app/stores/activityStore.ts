@@ -1,6 +1,6 @@
 import { observable, action, computed, configure, runInAction } from "mobx";
 import { createContext, SyntheticEvent } from "react";
-import { IActivity } from "../../models/activity";
+import { IActivity } from "../models/activity";
 import agent from "../api/agent";
 
 configure({ enforceActions: "always" });
@@ -40,7 +40,6 @@ class ActivityStore {
         });
         this.loadingInitial = false;
       });
-      console.log(this.groupActivitiesByDate(activities));
     } catch (error) {
       runInAction("loading activities error", () => {
         this.loadingInitial = false;

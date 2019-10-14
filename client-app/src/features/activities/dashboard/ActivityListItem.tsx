@@ -1,7 +1,7 @@
 import React from "react";
 import { Item, Button, Label, Segment, Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import { IActivity } from "../../../models/activity";
+import { IActivity } from "../../../app/models/activity";
 
 const ActivityListItem: React.FC<{ activity: IActivity }> = ({ activity }) => {
   return (

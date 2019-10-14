@@ -1,6 +1,6 @@
 import React from 'react'
 import { Segment, Header, Button, Image, Item } from 'semantic-ui-react'
-import { IActivity } from '../../../models/activity';
+import { IActivity } from '../../../app/models/activity';
 import { observer } from 'mobx-react-lite';
 
 const activityImageStyle = {
